@@ -5,3 +5,10 @@ vscode:
   extensions:
     - mubaidr.vuejs-extension-pack
     - vscjava.vscode-java-pack
+
+tasks:
+  - init: mvn verify
+
+github:
+  prebuilds:
+    addBadge: true
