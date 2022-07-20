@@ -1,2 +1,7 @@
 image:
   file: .gitpod.Dockerfile
+
+vscode:
+  extensions:
+    - mubaidr.vuejs-extension-pack
+    - vscjava.vscode-java-pack
