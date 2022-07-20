@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.github.ipergenitsa</groupId>
         <artifactId>spring-vue</artifactId>
-        <version>${project.version}</version>
+        <version>${revision}</version>
     </parent>
 
     <properties>
@@ -27,6 +27,12 @@
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.ipergenitsa</groupId>
+            <artifactId>frontend</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -39,19 +45,6 @@
                 </configuration>
             </plugin>
             <plugin>
-                <artifactId>maven-clean-plugin</artifactId>
-                <configuration>
-                    <filesets>
-                        <fileset>
-                            <directory>src/main/resources/public</directory>
-                            <includes>
-                                <include>**/*</include>
-                            </includes>
-                        </fileset>
-                    </filesets>
-                </configuration>
-            </plugin>
-            <plugin>
                 <artifactId>maven-resources-plugin</artifactId>
                 <executions>
                     <execution>
@@ -61,7 +54,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>src/main/resources/public</outputDirectory>
+                            <outputDirectory>${project.build.directory}/classes/public</outputDirectory>
                             <overwrite>true</overwrite>
                             <resources>
                                 <resource>

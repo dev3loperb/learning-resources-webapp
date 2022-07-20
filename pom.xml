@@ -22,4 +22,9 @@
         <revision>1.0.0-SNAPSHOT</revision>
     </properties>
 
+    <modules>
+        <module>backend</module>
+        <module>frontend</module>
+    </modules>
+
 </project>

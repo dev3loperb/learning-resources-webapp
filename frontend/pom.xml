@@ -10,7 +10,7 @@
     <parent>
         <groupId>com.github.ipergenitsa</groupId>
         <artifactId>spring-vue</artifactId>
-        <version>${project.version}</version>
+        <version>${revision}</version>
     </parent>
 
     <build>
