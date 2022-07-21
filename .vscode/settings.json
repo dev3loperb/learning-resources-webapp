@@ -2,5 +2,6 @@
   "eslint.workingDirectories": [{ "mode": "auto" }],
   "eslint.options": {
     "configFile": "./frontend/babel.config.js"
-  }
+  },
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
