@@ -8,7 +8,6 @@ vscode:
 
 tasks:
   - init: mvn verify
-  - command: mvn spring-boot:run
 
 github:
   prebuilds:
